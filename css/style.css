@@ -162,6 +162,18 @@ button:active {
     font-style: italic;
 }
 
+.footer {
+    text-align: center;
+    padding: 1rem;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    border-top: 1px solid #eee;
+}
+
+.footer p {
+    margin: 0;
+}
+
 @media (max-width: 600px) {
     .container {
         padding: 1rem;
