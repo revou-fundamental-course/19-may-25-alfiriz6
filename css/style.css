@@ -178,27 +178,27 @@ button:active {
     .container {
         padding: 1rem;
     }
-    
+
     .calculator {
         padding: 1.5rem;
     }
-    
+
     .tabs {
         flex-direction: column;
         border-bottom: none;
     }
-    
+
     .tab-btn {
         border-bottom: none;
         border-left: 3px solid transparent;
         text-align: left;
     }
-    
+
     .tab-btn.active {
         border-bottom: none;
         border-left-color: #3498db;
     }
-    
+
     .button-group {
         flex-direction: column;
         gap: 0.5rem;

@@ -1,67 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator Suhu</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Kalkulator Suhu</h1>
         <p>Konversi antara Celsius, Fahrenheit, dan Kelvin</p>
-        
+
         <div class="calculator">
             <div class="tabs">
                 <button class="tab-btn active" data-unit="celsius">Celsius</button>
                 <button class="tab-btn" data-unit="fahrenheit">Fahrenheit</button>
                 <button class="tab-btn" data-unit="kelvin">Kelvin</button>
             </div>
-            
+
             <div class="tab-content active" id="celsius-tab">
                 <form class="conversion-form">
                     <div class="input-group">
                         <label for="celsius-input">Masukkan Suhu Celsius:</label>
-                        <input type="number" id="celsius-input" placeholder="0" step="0.01">
+                        <input type="number" id="celsius-input" class="temp-input" placeholder="0" step="0.01">
                     </div>
                     <div class="button-group">
-                        <button type="button" class="convert-btn" data-from="celsius" data-to="fahrenheit">Ke Fahrenheit</button>
-                        <button type="button" class="convert-btn" data-from="celsius" data-to="kelvin">Ke Kelvin</button>
+                        <button type="button" class="convert-btn" data-from="celsius" data-to="fahrenheit">Ke
+                            Fahrenheit</button>
+                        <button type="button" class="convert-btn" data-from="celsius" data-to="kelvin">Ke
+                            Kelvin</button>
                     </div>
                 </form>
             </div>
-            
+
             <div class="tab-content" id="fahrenheit-tab">
                 <form class="conversion-form">
                     <div class="input-group">
                         <label for="fahrenheit-input">Masukkan Suhu Fahrenheit:</label>
-                        <input type="number" id="fahrenheit-input" placeholder="0" step="0.01">
+                        <input type="number" id="fahrenheit-input" class="temp-input" placeholder="0" step="0.01">
                     </div>
                     <div class="button-group">
-                        <button type="button" class="convert-btn" data-from="fahrenheit" data-to="celsius">Ke Celsius</button>
-                        <button type="button" class="convert-btn" data-from="fahrenheit" data-to="kelvin">Ke Kelvin</button>
+                        <button type="button" class="convert-btn" data-from="fahrenheit" data-to="celsius">Ke
+                            Celsius</button>
+                        <button type="button" class="convert-btn" data-from="fahrenheit" data-to="kelvin">Ke
+                            Kelvin</button>
                     </div>
                 </form>
             </div>
-            
+
             <div class="tab-content" id="kelvin-tab">
                 <form class="conversion-form">
                     <div class="input-group">
                         <label for="kelvin-input">Masukkan Suhu Kelvin:</label>
-                        <input type="number" id="kelvin-input" placeholder="0" step="0.01">
+                        <input type="number" id="kelvin-input" class="temp-input" placeholder="0" step="0.01">
                     </div>
                     <div class="button-group">
-                        <button type="button" class="convert-btn" data-from="kelvin" data-to="celsius">Ke Celsius</button>
-                        <button type="button" class="convert-btn" data-from="kelvin" data-to="fahrenheit">Ke Fahrenheit</button>
+                        <button type="button" class="convert-btn" data-from="kelvin" data-to="celsius">Ke
+                            Celsius</button>
+                        <button type="button" class="convert-btn" data-from="kelvin" data-to="fahrenheit">Ke
+                            Fahrenheit</button>
                     </div>
                 </form>
             </div>
-            
+
             <div class="result-container" id="resultContainer" style="display: none;">
                 <h2>Hasil Konversi</h2>
                 <div class="result" id="conversionResult"></div>
                 <div class="explanation" id="explanation"></div>
-                <button type="button" id="resetBtn">Konversi Lagi</button>
+                <button type="button" id="resetBtn">Reset</button>
             </div>
         </div>
     </div>
@@ -72,4 +80,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
